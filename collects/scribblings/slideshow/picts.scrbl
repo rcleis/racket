@@ -236,7 +236,7 @@ override settings supplied by the context.}
            [(filled-ellipse [w real?] [h real?] [#:draw-border? draw-border? any/c #t]) pict?]
            [(disk [diameter real?] [#:draw-border? draw-border? any/c #t]) pict?])]{
 
-Unfilled and filled ellipses.
+Unfilled and filled ellipses. For filled ellipses set the border size with @racket[linewidth].
 
 If @racket[draw-border?] is @racket[#f], then the pen is set to be transparent
 before drawing the ellipse.
