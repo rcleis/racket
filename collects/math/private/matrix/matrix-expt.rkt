@@ -28,6 +28,7 @@
     (raise-type-error 'matrix-expt "(Matrix Number)" a))
   (unless (square-matrix? a)
     (error 'matrix-expt "Square matrix expected, got ~a" a))
+  (displayln n)
   (cond
     [(= n 0)  (identity-matrix (square-matrix-size a))]
     [(= n 1)  a]
